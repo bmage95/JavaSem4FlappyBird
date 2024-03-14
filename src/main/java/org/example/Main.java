@@ -7,13 +7,10 @@ import java.awt.event.KeyListener;
 
 import static org.example.TopClass.tc;
 
-abstract class InitAll {
-    int x, y, height, width;
-    int space_bar = 0;
-}
 
 
-   class TopClass {
+
+    class TopClass {
     //global constant variables
     private static final int SCREEN_WIDTH = (int) Toolkit.getDefaultToolkit().getScreenSize().getWidth();
     private static final int SCREEN_HEIGHT = (int) Toolkit.getDefaultToolkit().getScreenSize().getHeight();
@@ -58,13 +55,13 @@ abstract class InitAll {
         return topPanel; //return a blank panel
     }
 }
-class Bird extends InitAll {
+class Bird extends TopClass {
     void jump(){
         // Implement the logic for bird jumping here
     }
 }
 
-class BirdInputs extends InitAll implements KeyListener {
+class BirdInputs extends TopClass implements KeyListener {
     static JTextField text = new JTextField();
     private Bird bird; // Add a reference to Bird
 
