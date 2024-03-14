@@ -8,6 +8,7 @@ import java.awt.event.KeyListener;
 abstract class InitAll {
     int x, y, height, width;
     int space_bar = 0;
+    int high_score;
 }
 
 class Bird extends InitAll {
